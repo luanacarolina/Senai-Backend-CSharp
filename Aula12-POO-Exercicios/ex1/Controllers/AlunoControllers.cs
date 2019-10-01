@@ -8,6 +8,8 @@ namespace Aula12_POO_Exercicios.ex1.Controllers
         AlunoModels alunos = new AlunoModels();
 
         public void CadastrarAluno(){
+            int bolsista = 0;
+
             System.Console.WriteLine("Digite seu Nome: ");
             alunos.Nome = Console.ReadLine();
             
@@ -21,27 +23,27 @@ namespace Aula12_POO_Exercicios.ex1.Controllers
             alunos.RG = Console.ReadLine();
 
             System.Console.WriteLine("Digite 1 se é Bolsista ou 2 se não é");
-            alunos.Bolsista = bool.Parse(Console.ReadLine());
+            bolsista = int.Parse(Console.ReadLine());
             
-             aluno.ValidaBolsista();
+            if(bolsista==1){
+                alunos.Bolsista =true;
+            }
+            else if(bolsista ==2){
+                alunos.Bolsista = false;
+            }
+
+        
+            
+           
             
         }
         
-        public  string  ValidaBolsista( bool Bolsista){
+       
+        public void ExibirAluno(){
 
-            bool bolsista = true;
-            string retorno = "";
-
-            if(bolsista ){
-                retorno ="1";
-            }
-            else if(bolsista=!true){
-                retorno ="1";
-            }
-            return retorno;
-
+            
+        }
 
 
         }
     }
-}
