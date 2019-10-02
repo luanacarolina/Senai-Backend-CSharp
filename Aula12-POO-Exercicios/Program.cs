@@ -10,7 +10,7 @@ namespace Aula12_POO_Exercicios
             AlunoControllers aluno = new AlunoControllers();
 
             aluno.CadastrarAluno();
-           
+           aluno.ExibirAluno();
         }
     }
 }

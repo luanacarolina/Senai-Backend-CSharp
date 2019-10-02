@@ -41,6 +41,17 @@ namespace Aula12_POO_Exercicios.ex1.Controllers
        
         public void ExibirAluno(){
 
+            System.Console.WriteLine(alunos.Nome);
+            System.Console.WriteLine(alunos.Idade);
+            System.Console.WriteLine(alunos.RG);
+           
+
+            if(alunos.Bolsista ==true){
+                System.Console.WriteLine("Aluno Bolsista");
+            }
+            else if(alunos.Bolsista==false){
+                System.Console.WriteLine("Aluno não Bolsista");
+            }
             
         }
 
